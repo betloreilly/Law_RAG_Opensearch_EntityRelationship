@@ -19,7 +19,7 @@ This demo is a **RAG** application on OpenSearch that combines **semantic search
 *Search by Semantic, Hybrid, or Semantic + Graph; view the RAG answer and source chunks in the main area, and retrieval steps (chunks, entities, relationships) in the right panel.*
 
 **Example: "Which other cases was the law firm that represented Martinez in?"**  
-With **Semantic only**, the app returns the top 3 chunks by similarity. Those chunks may say that Baker & Associates represented Martinez, but the *other* cases that firm appears in live in different chunks that never get retrieved—so the model cannot list them. 
+With **Semantic only**, the app returns the top 3 chunks by similarity. Those chunks may say that Baker & Associates represented Martinez, but the *other* cases that firm appears in live in different chunks that never get retrieved so the model cannot list them. 
 
 With **Semantic + Graph**, the system does a 1-hop (Martinez case → `represented_plaintiff_by` → Baker & Associates) and then a 2-hop (all relationships for Baker & Associates → every case that firm is in). The LLM receives chunks plus the full set of relationships and can answer correctly.
 
@@ -62,7 +62,7 @@ source .venv/bin/activate   # or: .venv\Scripts\activate on Windows
 python scripts/ingest.py
 ```
 
-This creates the three indices (if missing), generates embeddings via OpenAI, and bulk-indexes chunks, entities, and relationships. The script loads `.env.local`. Use `OPENSEARCH_USE_HTTP=true` if you get SSL "wrong version number" with an https URL.
+This creates the three indices (if missing), generates embeddings via OpenAI, and bulk-indexes chunks, entities, and relationships. The script loads `.env.local`.  
 
 ## Run the app
 
@@ -80,9 +80,11 @@ The app exposes three strategies so you can compare results for the same questio
 |-----|----------|
 | **Semantic only** | k-NN search on `law_chunks.text_embedding`. No keyword match, no graph. |
 | **Hybrid** | Keyword `match` (fuzziness) on `law_chunks.text` plus k-NN on `law_chunks.text_embedding`, then merge and rank. |
-| **Semantic + Graph** | k-NN on chunks, then entity names from top chunks; query `law_entities` and `law_relationships`. Context to the LLM: chunks + entities + relationships. |
+| **Semantic + Graph** | Match question tokens to `law_entities` (e.g. "Martinez"); k-NN on chunks and add entity names from top chunks; merge sets. Query `law_entities` + `law_relationships` for those entities. 2-hop: from 1-hop relationships take new entities (e.g. law firm that represented Martinez) and fetch their relationships (other cases). Example: Martinez → represented_by → Baker & Associates → 2-hop → all cases that firm is in. Context to LLM: chunks + entities + relationships. |
 
 The right panel explainability reflects the actual OpenSearch steps and data used. The app returns **3 chunks** per search for semantic and hybrid, so "Which cases was Baker & Associates involved in?" often looks incomplete with Semantic only; **Semantic + Graph** sees all cases via the relationship index.
+
+**2-hop limit vs GraphRAG.** This demo uses a fixed **two-hop** graph expansion: start from question/chunk entities → fetch their relationships (1-hop) → take entities that appeared there and fetch *their* relationships (2-hop), then stop. That covers questions like “which other cases was the law firm that represented Martinez in?” (Martinez → firm → other cases). You can implement more hops in OpenSearch by repeating the same pattern (query relationships for entities discovered in the previous hop), but each hop adds another round-trip and result set size. **Use OpenSearch entity/relationship** when you already have OpenSearch, need explainable retrieval from a single store (chunks + entities + relationships), and your questions are mostly 1–2 hops (e.g. “which cases was this firm in?”, “who represented X?”). **Use GraphRAG** when you need multi-hop or variable-depth traversal, community-level summaries, or a dedicated graph database; OpenSearch can still handle semantic and chunk search alongside it.
 
 ## Questions that show the benefit of the graph
 
