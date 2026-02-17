@@ -14,7 +14,7 @@ This demo is a **RAG** application on OpenSearch that combines **semantic search
 - **Main area:** Search input, RAG answer, and source chunks.
 - **Right panel:** How data was retrieved (indices, query types, chunks, entities, relationships).
 
-![Demo of Law RAG app user interface](law_rag.gif)
+![Demo of Law RAG app user interface](lawrag.gif)
 
 ## Prerequisites
 
