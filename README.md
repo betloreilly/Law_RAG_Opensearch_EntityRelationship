@@ -16,6 +16,13 @@ This demo is a **RAG** application on OpenSearch that combines **semantic search
 
 ![Demo of Law RAG app user interface](lawrag.gif)
 
+*Search by Semantic, Hybrid, or Semantic + Graph; view the RAG answer and source chunks in the main area, and retrieval steps (chunks, entities, relationships) in the right panel.*
+
+**Example: "Which other cases was the law firm that represented Martinez in?"**  
+With **Semantic only**, the app returns the top 3 chunks by similarity. Those chunks may say that Baker & Associates represented Martinez, but the *other* cases that firm appears in live in different chunks that never get retrieved—so the model cannot list them. 
+
+With **Semantic + Graph**, the system does a 1-hop (Martinez case → `represented_plaintiff_by` → Baker & Associates) and then a 2-hop (all relationships for Baker & Associates → every case that firm is in). The LLM receives chunks plus the full set of relationships and can answer correctly.
+
 ## Prerequisites
 
 - Node 18+ (Next.js app)
