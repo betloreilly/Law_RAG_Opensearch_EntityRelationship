@@ -1,0 +1,5 @@
+# Python dependencies for ingestion only (scripts/ingest.py)
+# Install in a venv: python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements-ingest.txt
+opensearch-py>=2.4.0
+openai>=1.0.0
+python-dotenv>=1.0.0

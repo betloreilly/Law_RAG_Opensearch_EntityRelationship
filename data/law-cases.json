@@ -1,0 +1,271 @@
+{
+  "cases": [
+    {
+      "case_id": "case_001",
+      "title": "Martinez v. Pacific Medical Group",
+      "filename": "martinez_v_pacific_medical.pdf",
+      "summary": "Medical malpractice and breach of fiduciary duty. Plaintiff Maria Martinez alleged that Pacific Medical Group and Dr. James Chen failed to obtain informed consent before surgery. The Superior Court of California, County of Los Angeles, found for the plaintiff and awarded $1.2 million in damages. Pacific Medical Group appealed; the Court of Appeal affirmed. Key issues: standard of care, informed consent, and causation.",
+      "chunks": [
+        {
+          "element_id": "chunk_001_1",
+          "text": "Martinez v. Pacific Medical Group (2023). Plaintiff Maria Martinez brought suit against Pacific Medical Group, a California corporation, and Dr. James Chen, alleging medical malpractice and lack of informed consent. Plaintiff was represented by Baker & Associates; lead counsel was Jennifer Walsh. The surgery was performed at Pacific Medical Center in Los Angeles on March 15, 2022. Martinez claimed she was not adequately informed of the risks of the procedure.",
+          "page_number": 1
+        },
+        {
+          "element_id": "chunk_001_2",
+          "text": "The Superior Court of California, County of Los Angeles, applied the standard of care under California Civil Code Section 3333.2. The jury found that Dr. Chen and Pacific Medical Group breached the duty of care and that the breach was a substantial factor in causing Martinez's injuries. Damages awarded totaled $1,200,000, including $800,000 for non-economic damages subject to the MICRA cap.",
+          "page_number": 2
+        },
+        {
+          "element_id": "chunk_001_3",
+          "text": "Pacific Medical Group appealed, arguing that the trial court erred in instructing the jury on informed consent. The Court of Appeal for the Second District affirmed the judgment. The court held that the evidence supported the finding that Martinez was not given adequate information to make an informed decision and that the defendants' conduct was a legal cause of her harm.",
+          "page_number": 3
+        }
+      ],
+      "entities": [
+        { "entity": "Maria Martinez", "type": "PERSON" },
+        { "entity": "Pacific Medical Group", "type": "ORGANIZATION" },
+        { "entity": "Dr. James Chen", "type": "PERSON" },
+        { "entity": "Superior Court of California", "type": "ORGANIZATION" },
+        { "entity": "Los Angeles", "type": "LOCATION" },
+        { "entity": "California", "type": "LOCATION" },
+        { "entity": "Pacific Medical Center", "type": "ORGANIZATION" },
+        { "entity": "March 15, 2022", "type": "DATE" },
+        { "entity": "$1,200,000", "type": "MONEY" },
+        { "entity": "Court of Appeal for the Second District", "type": "ORGANIZATION" },
+        { "entity": "California Civil Code Section 3333.2", "type": "DOCUMENT" },
+        { "entity": "Baker & Associates", "type": "ORGANIZATION" },
+        { "entity": "Jennifer Walsh", "type": "PERSON" }
+      ],
+      "relationships": [
+        { "from": "Maria Martinez", "relationship": "plaintiff_in", "to": "Martinez v. Pacific Medical Group" },
+        { "from": "Pacific Medical Group", "relationship": "defendant_in", "to": "Martinez v. Pacific Medical Group" },
+        { "from": "Martinez v. Pacific Medical Group", "relationship": "represented_plaintiff_by", "to": "Baker & Associates" },
+        { "from": "Martinez v. Pacific Medical Group", "relationship": "lead_counsel_plaintiff", "to": "Jennifer Walsh" },
+        { "from": "Jennifer Walsh", "relationship": "employed_by", "to": "Baker & Associates" },
+        { "from": "Dr. James Chen", "relationship": "employed_by", "to": "Pacific Medical Group" },
+        { "from": "Dr. James Chen", "relationship": "performed_at", "to": "Pacific Medical Center" },
+        { "from": "Pacific Medical Center", "relationship": "located_in", "to": "Los Angeles" },
+        { "from": "Superior Court of California", "relationship": "located_in", "to": "Los Angeles" },
+        { "from": "Martinez v. Pacific Medical Group", "relationship": "decided_by", "to": "Superior Court of California" },
+        { "from": "Martinez v. Pacific Medical Group", "relationship": "governed_by", "to": "California Civil Code Section 3333.2" },
+        { "from": "Martinez v. Pacific Medical Group", "relationship": "awarded", "to": "$1,200,000" },
+        { "from": "Martinez v. Pacific Medical Group", "relationship": "affirmed_by", "to": "Court of Appeal for the Second District" }
+      ]
+    },
+    {
+      "case_id": "case_002",
+      "title": "Thompson v. State of New York (Wrongful Termination)",
+      "filename": "thompson_v_state_ny.pdf",
+      "summary": "State employee wrongful termination and First Amendment retaliation. Robert Thompson, a former employee of the New York Department of Environmental Conservation, claimed he was fired for reporting violations to the EPA. The United States District Court for the Northern District of New York granted summary judgment for the defendant on qualified immunity grounds. The Second Circuit reversed in part and remanded.",
+      "chunks": [
+        {
+          "element_id": "chunk_002_1",
+          "text": "Thompson v. State of New York, 2024. Robert Thompson was employed by the New York Department of Environmental Conservation (DEC) from 2018 until his termination in June 2023. Thompson alleged that he was terminated in retaliation for reporting alleged environmental violations to the Environmental Protection Agency and to state legislators. He brought claims under 42 U.S.C. § 1983 for First Amendment retaliation and under New York Labor Law § 740 (whistleblower protection).",
+          "page_number": 1
+        },
+        {
+          "element_id": "chunk_002_2",
+          "text": "The United States District Court for the Northern District of New York granted the State's motion for summary judgment, holding that the individual defendants were entitled to qualified immunity and that the State had not waived sovereign immunity for the federal claims. The court did not reach the merits of the First Amendment claim.",
+          "page_number": 2
+        },
+        {
+          "element_id": "chunk_002_3",
+          "text": "The Second Circuit Court of Appeals reversed in part. It held that Thompson had stated a viable First Amendment retaliation claim and that qualified immunity did not bar the suit at the summary judgment stage because the right to be free from retaliation for reporting environmental violations was clearly established. The case was remanded for trial on the retaliation claim. Damages sought included back pay and compensatory damages.",
+          "page_number": 3
+        }
+      ],
+      "entities": [
+        { "entity": "Robert Thompson", "type": "PERSON" },
+        { "entity": "State of New York", "type": "LOCATION" },
+        { "entity": "New York Department of Environmental Conservation", "type": "ORGANIZATION" },
+        { "entity": "DEC", "type": "ORGANIZATION" },
+        { "entity": "June 2023", "type": "DATE" },
+        { "entity": "Environmental Protection Agency", "type": "ORGANIZATION" },
+        { "entity": "EPA", "type": "ORGANIZATION" },
+        { "entity": "United States District Court for the Northern District of New York", "type": "ORGANIZATION" },
+        { "entity": "Second Circuit Court of Appeals", "type": "ORGANIZATION" },
+        { "entity": "42 U.S.C. § 1983", "type": "DOCUMENT" },
+        { "entity": "New York Labor Law § 740", "type": "DOCUMENT" }
+      ],
+      "relationships": [
+        { "from": "Robert Thompson", "relationship": "employed_by", "to": "New York Department of Environmental Conservation" },
+        { "from": "New York Department of Environmental Conservation", "relationship": "part_of", "to": "State of New York" },
+        { "from": "Robert Thompson", "relationship": "reported_to", "to": "Environmental Protection Agency" },
+        { "from": "Robert Thompson", "relationship": "plaintiff_in", "to": "Thompson v. State of New York" },
+        { "from": "State of New York", "relationship": "defendant_in", "to": "Thompson v. State of New York" },
+        { "from": "Thompson v. State of New York", "relationship": "decided_by", "to": "United States District Court for the Northern District of New York" },
+        { "from": "Thompson v. State of New York", "relationship": "appealed_to", "to": "Second Circuit Court of Appeals" },
+        { "from": "Thompson v. State of New York", "relationship": "governed_by", "to": "42 U.S.C. § 1983" }
+      ]
+    },
+    {
+      "case_id": "case_003",
+      "title": "In re Consumer Data Breach Litigation",
+      "filename": "consumer_data_breach_litigation.pdf",
+      "summary": "Consumer class action following a data breach. RetailCo Inc. suffered a breach exposing customer PII. Plaintiffs sought damages under state consumer protection statutes (California, New York) and common law. The District Court dismissed some claims but allowed negligence and California Consumer Privacy Act claims to proceed. Settlement approved for $5 million fund.",
+      "chunks": [
+        {
+          "element_id": "chunk_003_1",
+          "text": "In re Consumer Data Breach Litigation, U.S. District Court for the Northern District of California. RetailCo Inc., a Delaware corporation with principal place of business in San Francisco, was represented by Baker & Associates. RetailCo experienced a data breach in September 2023 that exposed names, addresses, and payment card information of approximately 2.1 million customers. Multiple class action complaints were consolidated before Judge Patricia Wong.",
+          "page_number": 1
+        },
+        {
+          "element_id": "chunk_003_2",
+          "text": "Plaintiffs asserted claims under the California Consumer Privacy Act (CCPA), the California Unfair Competition Law, the New York General Business Law, and common law negligence. RetailCo moved to dismiss. The court dismissed the New York statutory claims for lack of standing but allowed the CCPA and negligence claims to proceed. The court held that the plaintiffs had adequately pleaded that RetailCo failed to implement reasonable security measures.",
+          "page_number": 2
+        },
+        {
+          "element_id": "chunk_003_3",
+          "text": "The parties reached a settlement. The settlement established a $5,000,000 fund for class members, with payments of up to $150 per claimant for out-of-pocket losses and up to three years of credit monitoring. The District Court approved the settlement in January 2025, finding it fair, adequate, and reasonable under Federal Rule of Civil Procedure 23(e).",
+          "page_number": 3
+        }
+      ],
+      "entities": [
+        { "entity": "RetailCo Inc.", "type": "ORGANIZATION" },
+        { "entity": "Delaware", "type": "LOCATION" },
+        { "entity": "San Francisco", "type": "LOCATION" },
+        { "entity": "September 2023", "type": "DATE" },
+        { "entity": "U.S. District Court for the Northern District of California", "type": "ORGANIZATION" },
+        { "entity": "Judge Patricia Wong", "type": "PERSON" },
+        { "entity": "California Consumer Privacy Act", "type": "DOCUMENT" },
+        { "entity": "CCPA", "type": "DOCUMENT" },
+        { "entity": "New York General Business Law", "type": "DOCUMENT" },
+        { "entity": "$5,000,000", "type": "MONEY" },
+        { "entity": "$150", "type": "MONEY" },
+        { "entity": "January 2025", "type": "DATE" },
+        { "entity": "Baker & Associates", "type": "ORGANIZATION" }
+      ],
+      "relationships": [
+        { "from": "RetailCo Inc.", "relationship": "incorporated_in", "to": "Delaware" },
+        { "from": "In re Consumer Data Breach Litigation", "relationship": "represented_defendant_by", "to": "Baker & Associates" },
+        { "from": "RetailCo Inc.", "relationship": "headquarters_in", "to": "San Francisco" },
+        { "from": "In re Consumer Data Breach Litigation", "relationship": "decided_by", "to": "U.S. District Court for the Northern District of California" },
+        { "from": "In re Consumer Data Breach Litigation", "relationship": "presided_by", "to": "Judge Patricia Wong" },
+        { "from": "In re Consumer Data Breach Litigation", "relationship": "governed_by", "to": "California Consumer Privacy Act" },
+        { "from": "In re Consumer Data Breach Litigation", "relationship": "settlement_amount", "to": "$5,000,000" }
+      ]
+    },
+    {
+      "case_id": "case_004",
+      "title": "Williams v. Pacific Medical Group",
+      "filename": "williams_v_pacific_medical.pdf",
+      "summary": "Another malpractice suit against Pacific Medical Group. Plaintiff David Williams alleged negligent post-operative care. The Superior Court of California, County of Los Angeles, granted summary judgment for the defendant; the Court of Appeal for the Second District affirmed. Same court and same governing law (California Civil Code Section 3333.2) as Martinez, but opposite outcome.",
+      "chunks": [
+        {
+          "element_id": "chunk_004_1",
+          "text": "Williams v. Pacific Medical Group (2024). Plaintiff David Williams sued Pacific Medical Group and Dr. Sarah Kim for negligent post-operative care following surgery at Pacific Medical Center in Los Angeles. Pacific Medical Group was represented by Baker & Associates. Williams claimed that follow-up care was inadequate and led to complications. The case was filed in the Superior Court of California, County of Los Angeles, and was governed by California Civil Code Section 3333.2 and MICRA.",
+          "page_number": 1
+        },
+        {
+          "element_id": "chunk_004_2",
+          "text": "The Superior Court of California granted Pacific Medical Group's motion for summary judgment, finding that Williams had failed to present sufficient expert testimony to establish the standard of care and breach. No damages were awarded. The Court of Appeal for the Second District affirmed the dismissal. Thus Pacific Medical Group has been both held liable (Martinez) and cleared (Williams) in cases before the same court.",
+          "page_number": 2
+        }
+      ],
+      "entities": [
+        { "entity": "David Williams", "type": "PERSON" },
+        { "entity": "Pacific Medical Group", "type": "ORGANIZATION" },
+        { "entity": "Dr. Sarah Kim", "type": "PERSON" },
+        { "entity": "Pacific Medical Center", "type": "ORGANIZATION" },
+        { "entity": "Los Angeles", "type": "LOCATION" },
+        { "entity": "Superior Court of California", "type": "ORGANIZATION" },
+        { "entity": "California", "type": "LOCATION" },
+        { "entity": "California Civil Code Section 3333.2", "type": "DOCUMENT" },
+        { "entity": "Court of Appeal for the Second District", "type": "ORGANIZATION" },
+        { "entity": "Baker & Associates", "type": "ORGANIZATION" }
+      ],
+      "relationships": [
+        { "from": "David Williams", "relationship": "plaintiff_in", "to": "Williams v. Pacific Medical Group" },
+        { "from": "Pacific Medical Group", "relationship": "defendant_in", "to": "Williams v. Pacific Medical Group" },
+        { "from": "Williams v. Pacific Medical Group", "relationship": "represented_defendant_by", "to": "Baker & Associates" },
+        { "from": "Dr. Sarah Kim", "relationship": "employed_by", "to": "Pacific Medical Group" },
+        { "from": "Dr. Sarah Kim", "relationship": "performed_at", "to": "Pacific Medical Center" },
+        { "from": "Pacific Medical Center", "relationship": "located_in", "to": "Los Angeles" },
+        { "from": "Williams v. Pacific Medical Group", "relationship": "decided_by", "to": "Superior Court of California" },
+        { "from": "Williams v. Pacific Medical Group", "relationship": "governed_by", "to": "California Civil Code Section 3333.2" },
+        { "from": "Williams v. Pacific Medical Group", "relationship": "affirmed_by", "to": "Court of Appeal for the Second District" }
+      ]
+    },
+    {
+      "case_id": "case_005",
+      "title": "Davis v. State of California (Wrongful Termination)",
+      "filename": "davis_v_state_california.pdf",
+      "summary": "California state employee wrongful termination. Lisa Davis, a former employee of the California Department of Health, claimed she was fired for reporting safety violations. The Superior Court of California, County of Sacramento, denied the State's motion to dismiss. The case was governed by California labor law and the California Whistleblower Protection Act.",
+      "chunks": [
+        {
+          "element_id": "chunk_005_1",
+          "text": "Davis v. State of California (2024). Lisa Davis was employed by the California Department of Health in Sacramento from 2019 until her termination in August 2023. Davis was represented by Jennifer Walsh of Baker & Associates. She alleged that she was terminated in retaliation for reporting patient safety violations to the California Department of Public Health. She brought claims under the California Whistleblower Protection Act and California Government Code Section 8547.",
+          "page_number": 1
+        },
+        {
+          "element_id": "chunk_005_2",
+          "text": "The Superior Court of California, County of Sacramento, denied the State's motion to dismiss, holding that Davis had adequately pleaded a causal link between her protected disclosure and her termination. The case was set for trial. The court applied California law, including the California Whistleblower Protection Act. Davis sought reinstatement, back pay, and compensatory damages.",
+          "page_number": 2
+        }
+      ],
+      "entities": [
+        { "entity": "Lisa Davis", "type": "PERSON" },
+        { "entity": "State of California", "type": "LOCATION" },
+        { "entity": "California Department of Health", "type": "ORGANIZATION" },
+        { "entity": "Sacramento", "type": "LOCATION" },
+        { "entity": "California", "type": "LOCATION" },
+        { "entity": "California Department of Public Health", "type": "ORGANIZATION" },
+        { "entity": "Superior Court of California", "type": "ORGANIZATION" },
+        { "entity": "California Whistleblower Protection Act", "type": "DOCUMENT" },
+        { "entity": "California Government Code Section 8547", "type": "DOCUMENT" },
+        { "entity": "Jennifer Walsh", "type": "PERSON" },
+        { "entity": "Baker & Associates", "type": "ORGANIZATION" }
+      ],
+      "relationships": [
+        { "from": "Lisa Davis", "relationship": "employed_by", "to": "California Department of Health" },
+        { "from": "Davis v. State of California", "relationship": "represented_plaintiff_by", "to": "Jennifer Walsh" },
+        { "from": "Jennifer Walsh", "relationship": "employed_by", "to": "Baker & Associates" },
+        { "from": "California Department of Health", "relationship": "part_of", "to": "State of California" },
+        { "from": "Lisa Davis", "relationship": "reported_to", "to": "California Department of Public Health" },
+        { "from": "Lisa Davis", "relationship": "plaintiff_in", "to": "Davis v. State of California" },
+        { "from": "State of California", "relationship": "defendant_in", "to": "Davis v. State of California" },
+        { "from": "Davis v. State of California", "relationship": "decided_by", "to": "Superior Court of California" },
+        { "from": "Davis v. State of California", "relationship": "governed_by", "to": "California Whistleblower Protection Act" }
+      ]
+    },
+    {
+      "case_id": "case_006",
+      "title": "Johnson v. RetailCo Inc. (Individual Data Breach)",
+      "filename": "johnson_v_retailco.pdf",
+      "summary": "Individual plaintiff suit against RetailCo Inc. following the same data breach that led to the class action In re Consumer Data Breach Litigation. Johnson opted out of the class and sued in the U.S. District Court for the Northern District of California. Judge Patricia Wong also presided. RetailCo moved to dismiss; the court allowed CCPA and negligence claims to proceed, consistent with the class action ruling.",
+      "chunks": [
+        {
+          "element_id": "chunk_006_1",
+          "text": "Johnson v. RetailCo Inc. (2024). Plaintiff Michael Johnson opted out of the class settlement in In re Consumer Data Breach Litigation and filed an individual action against RetailCo Inc. in the U.S. District Court for the Northern District of California. RetailCo was represented by Baker & Associates. The same data breach—September 2023, 2.1 million customers—formed the basis of both the class action and Johnson's suit. Judge Patricia Wong was assigned to the case.",
+          "page_number": 1
+        },
+        {
+          "element_id": "chunk_006_2",
+          "text": "Johnson asserted claims under the California Consumer Privacy Act (CCPA), negligence, and invasion of privacy. RetailCo moved to dismiss, arguing that Johnson's claims were barred by the class settlement. The court denied the motion, holding that opt-out plaintiffs could pursue individual claims. The court applied the same reasoning as in the consolidated class action: CCPA and negligence claims could proceed. Trial was set for 2025.",
+          "page_number": 2
+        }
+      ],
+      "entities": [
+        { "entity": "Michael Johnson", "type": "PERSON" },
+        { "entity": "RetailCo Inc.", "type": "ORGANIZATION" },
+        { "entity": "In re Consumer Data Breach Litigation", "type": "DOCUMENT" },
+        { "entity": "U.S. District Court for the Northern District of California", "type": "ORGANIZATION" },
+        { "entity": "Judge Patricia Wong", "type": "PERSON" },
+        { "entity": "September 2023", "type": "DATE" },
+        { "entity": "California Consumer Privacy Act", "type": "DOCUMENT" },
+        { "entity": "CCPA", "type": "DOCUMENT" },
+        { "entity": "Baker & Associates", "type": "ORGANIZATION" }
+      ],
+      "relationships": [
+        { "from": "Michael Johnson", "relationship": "plaintiff_in", "to": "Johnson v. RetailCo Inc." },
+        { "from": "RetailCo Inc.", "relationship": "defendant_in", "to": "Johnson v. RetailCo Inc." },
+        { "from": "Johnson v. RetailCo Inc.", "relationship": "represented_defendant_by", "to": "Baker & Associates" },
+        { "from": "Johnson v. RetailCo Inc.", "relationship": "decided_by", "to": "U.S. District Court for the Northern District of California" },
+        { "from": "Johnson v. RetailCo Inc.", "relationship": "presided_by", "to": "Judge Patricia Wong" },
+        { "from": "Johnson v. RetailCo Inc.", "relationship": "governed_by", "to": "California Consumer Privacy Act" },
+        { "from": "Johnson v. RetailCo Inc.", "relationship": "related_to", "to": "In re Consumer Data Breach Litigation" }
+      ]
+    }
+  ]
+}
